@@ -1,0 +1,68 @@
+
+> my-project@0.1.0 build
+> next build
+
+▲ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 2 errors:
+./components/navbar.tsx:5:1
+Module not found: Can't resolve 'framer-motion'
+[0m [90m 3 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m"react"[39m
+ [90m 4 |[39m [36mimport[39m { useTheme } [36mfrom[39m [32m"next-themes"[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { motion[33m,[39m [33mAnimatePresence[39m } [36mfrom[39m [32m"framer-motion"[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m [36mimport[39m {
+ [90m 7 |[39m   [33mBriefcase[39m[33m,[39m
+ [90m 8 |[39m   [33mBell[39m[33m,[39m[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/navbar.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/navbar.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./components/ui/magnetic.tsx:4:1
+Module not found: Can't resolve 'framer-motion'
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m [33mReact[39m[33m,[39m { useRef[33m,[39m useState } [36mfrom[39m [32m'react'[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { motion } [36mfrom[39m [32m'framer-motion'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m
+ [90m 6 |[39m [36mexport[39m [36mfunction[39m [33mMagnetic[39m({ children[33m,[39m distance [33m=[39m [35m0.5[39m }[33m:[39m { children[33m:[39m [33mReact[39m[33m.[39m[33mReactNode[39m[33m,[39m distance[33m?[39m[33m:[39m number }) {
+ [90m 7 |[39m     [36mconst[39m ref [33m=[39m useRef[33m<[39m[33mHTMLDivElement[39m[33m>[39m([36mnull[39m)[0m
+
+
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/magnetic.tsx [Client Component Browser]
+    ./components/hero-section.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/magnetic.tsx [Client Component SSR]
+    ./components/hero-section.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./components/navbar.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./components/ui/magnetic.tsx:4:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
